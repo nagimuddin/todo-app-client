@@ -40,7 +40,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <a class="btn btn-ghost normal-case text-white text-xl">Todo</a>
+          <a class="btn btn-ghost normal-case text-white text-xl">Todo List</a>
         </div>
         <div class="navbar-end hidden lg:flex">
           <ul class="menu menu-horizontal p-0 text-white">

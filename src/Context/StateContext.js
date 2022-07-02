@@ -8,7 +8,7 @@ const StateContext = ({ children }) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const url = "http://localhost:5000/task";
+      const url = "https://endgame-task.herokuapp.com/task";
       const { data } = await axios.get(url);
       setData(data);
     };

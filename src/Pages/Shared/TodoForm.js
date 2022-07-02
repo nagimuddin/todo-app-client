@@ -10,7 +10,7 @@ const TodoForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newTodoDetail = { name: todoName, complete: false };
-    const url = `http://${"localhost:5000/task"}`;
+    const url = `https://${"endgame-task.herokuapp.com/task"}`;
     fetch(url, {
       method: "POST",
       headers: {

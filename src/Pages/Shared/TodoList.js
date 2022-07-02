@@ -11,7 +11,7 @@ const TodoList = () => {
     const newTodos = [...todos];
     newTodos[id].complete = !newTodos[id].complete;
     // setUpdate(newTodos[id]);
-    fetch(`http://${"localhost:5000/task"}/${todos[id]._id}`, {
+    fetch(`https://${"endgame-task.herokuapp.com/task"}/${todos[id]._id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -34,7 +34,7 @@ const TodoList = () => {
     const newTodos = [...todos];
     newTodos[id].name = editValue;
     // setUpdate(newTodos[id]);
-    fetch(`http://${"localhost:5000/task"}/${todos[id]._id}`, {
+    fetch(`https://${"endgame-task.herokuapp.com/task"}/${todos[id]._id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -57,7 +57,7 @@ const TodoList = () => {
 
   const handleDelete = (id) => {
     const newTodos = [...todos];
-    fetch(`http://${"localhost:5000/task"}/${todos[id]._id}`, {
+    fetch(`https://${"endgame-task.herokuapp.com/task"}/${todos[id]._id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

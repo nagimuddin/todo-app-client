@@ -29,8 +29,9 @@ const TodoForm = () => {
     <div>
       <form onSubmit={handleSubmit} className="text-center my-8">
         <input
-        onChange={handleChange}
+          onChange={handleChange}
           type="text"
+          value={todoName}
           placeholder="Type here"
           className="input input-bordered w-full max-w-xs"
           required
